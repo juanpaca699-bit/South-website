@@ -1,7 +1,6 @@
-/* =====================================
-   CHINA WEBSITE
-   Elegant Editorial Style
-   ===================================== */
+/* =================================
+   SOUTH AFRICA - EXPLORER STYLE
+   ================================= */
 
 * {
     box-sizing: border-box;
@@ -10,158 +9,189 @@
 
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f7f7f5;
-    color: #292929;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eee9dc;
+    color: #252525;
 }
 
 
-/* =====================================
+/* =================================
    HEADER
-   ===================================== */
+   ================================= */
 
 header {
-    background: #ffffff;
-    text-align: center;
-    padding: 55px 20px 45px;
-    border-bottom: 1px solid #d8d8d8;
+    min-height: 85vh;
+    padding: 80px 8%;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("images/south-africa.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: relative;
 }
 
 header h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 58px;
-    color: #172b4d;
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 9vw, 110px);
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: -3px;
 }
 
 header p {
-    color: #666;
-    font-size: 18px;
-    margin-top: 12px;
-    letter-spacing: 1px;
+    font-size: 22px;
+    max-width: 600px;
+    line-height: 1.5;
+    margin: 20px 0;
 }
-
-
-/* =====================================
-   HERO IMAGE
-   ===================================== */
 
 .hero-image {
-    width: 75%;
-    max-width: 850px;
-    height: 300px;
-    object-fit: cover;
-
-    margin-top: 30px;
-
-    border: 8px solid white;
-    outline: 1px solid #c9c9c9;
+    display: none;
 }
 
 
-/* =====================================
+/* =================================
    NAVIGATION
-   ===================================== */
+   ================================= */
 
 nav {
-    background: #172b4d;
-    padding: 18px;
-    text-align: center;
+    background: #222;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-
-    margin: 0 20px;
-
-    font-size: 14px;
-    letter-spacing: 1px;
     text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-bottom: 7px;
 
-    transition: 0.25s;
+    border-bottom: 2px solid transparent;
+
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #c9a227;
+    color: #f2b134;
+    border-bottom: 2px solid #f2b134;
 }
 
 
-/* =====================================
-   MAIN SECTIONS
-   ===================================== */
+/* =================================
+   SECTIONS
+   ================================= */
 
 section {
-    max-width: 950px;
-    margin: 65px auto;
+    max-width: 1100px;
+    margin: 90px auto;
     padding: 0 35px;
 }
 
 section h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 34px;
-    color: #172b4d;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #174c3c;
+}
 
-    margin-bottom: 25px;
-
-    padding-bottom: 12px;
-
-    border-bottom: 1px solid #c9a227;
+section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: #e3a629;
+    margin-top: 15px;
 }
 
 section p {
-    font-size: 17px;
-    line-height: 1.9;
-    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 850px;
 }
 
 
-/* =====================================
-   CULTURE / CARDS
-   ===================================== */
+/* =================================
+   LARGE IMAGES
+   ================================= */
+
+.content-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin: 35px 0;
+
+    border-radius: 0;
+
+    box-shadow: 20px 20px 0 #174c3c;
+}
+
+
+/* =================================
+   CULTURE CARDS
+   ================================= */
 
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-
-    margin-top: 35px;
+    gap: 0;
+    margin-top: 40px;
 }
 
 .card {
-    background: white;
+    background: #174c3c;
+    color: white;
+    padding: 0 0 30px 0;
 
-    border: 1px solid #dedede;
+    border-radius: 0;
 
-    padding: 20px;
+    transition: 0.3s;
+}
 
-    transition: 0.25s;
+.card:nth-child(2) {
+    background: #e3a629;
+    color: #222;
+}
+
+.card:nth-child(3) {
+    background: #252525;
 }
 
 .card:hover {
-    border-color: #c9a227;
-    transform: translateY(-4px);
+    transform: translateY(-12px);
 }
 
 .card img {
     width: 100%;
-    height: 150px;
-
+    height: 210px;
     object-fit: cover;
+    display: block;
+}
 
-    margin-bottom: 15px;
+.card h3,
+.card p {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .card h3 {
-    font-family: Georgia, "Times New Roman", serif;
-
-    color: #172b4d;
-
-    font-size: 21px;
-
-    margin: 5px 0 10px;
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-top: 25px;
 }
 
 .card p {
@@ -170,111 +200,126 @@ section p {
 }
 
 
-/* =====================================
-   CONTENT IMAGES
-   ===================================== */
+/* =================================
+   CANYON SECTION
+   ================================= */
 
-.content-image {
-    width: 100%;
-    height: 360px;
+#canyon {
+    background: #174c3c;
+    color: white;
 
-    object-fit: cover;
+    max-width: none;
 
-    margin: 25px 0;
+    padding: 80px 10%;
+    margin: 100px 0;
+}
 
-    border: 1px solid #d5d5d5;
+#canyon h2 {
+    color: white;
+}
+
+#canyon p {
+    max-width: 900px;
+}
+
+#canyon .content-image {
+    box-shadow: 20px 20px 0 #e3a629;
 }
 
 
-/* =====================================
+/* =================================
    FACTS
-   ===================================== */
+   ================================= */
+
+#facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
 
 #facts ul {
-    background: white;
-
-    border: 1px solid #dedede;
-
-    padding: 30px 45px;
+    background: #fff;
+    padding: 35px 45px;
+    border-left: 8px solid #e3a629;
 }
 
 #facts li {
-    margin: 13px 0;
-
-    line-height: 1.7;
-
-    color: #444;
-}
-
-#facts li::marker {
-    color: #c9a227;
+    margin: 18px 0;
+    line-height: 1.6;
 }
 
 
-/* =====================================
+/* =================================
    FOOTER
-   ===================================== */
+   ================================= */
 
 footer {
-    background: #172b4d;
-
+    background: #222;
     color: white;
-
+    padding: 60px 20px;
     text-align: center;
-
-    padding: 35px;
-
-    margin-top: 90px;
 }
 
 footer p {
     margin: 0;
-
-    font-size: 14px;
-
     letter-spacing: 1px;
 }
 
 
-/* =====================================
+/* =================================
    MOBILE
-   ===================================== */
+   ================================= */
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+
+    header {
+        min-height: 70vh;
+        padding: 50px 25px;
+    }
 
     header h1 {
-        font-size: 43px;
+        font-size: 55px;
     }
 
     header p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    .hero-image {
-        width: 100%;
-        height: 230px;
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        padding: 18px 10px;
     }
 
     nav a {
-        display: inline-block;
-        margin: 7px 8px;
-        font-size: 12px;
+        font-size: 11px;
     }
 
     section {
-        margin: 50px auto;
+        margin: 60px auto;
         padding: 0 20px;
     }
 
     section h2 {
-        font-size: 29px;
+        font-size: 38px;
+    }
+
+    .content-image {
+        height: 280px;
+        box-shadow: 10px 10px 0 #174c3c;
     }
 
     .cards {
         grid-template-columns: 1fr;
     }
 
-    .content-image {
-        height: 250px;
+    #facts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #canyon {
+        padding: 60px 25px;
     }
 }
