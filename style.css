@@ -313,7 +313,49 @@ footer p {
     .cards {
         grid-template-columns: 1fr;
     }
+.south-african-culture {
+    padding: 50px 10%;
+    text-align: center;
+    background: #f4f1e8;
+}
 
+.south-african-culture h2 {
+    font-size: 36px;
+    color: #b23a2b;
+    margin-bottom: 35px;
+}
+
+.culture-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.culture-card {
+    width: 350px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    border-top: 6px solid #e0a800;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+}
+
+.culture-card h3 {
+    color: #17633c;
+    font-size: 25px;
+}
+
+.culture-card p {
+    color: #444;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.culture-symbol {
+    font-size: 60px;
+    margin-top: 20px;
+}
     #facts {
         grid-template-columns: 1fr;
         gap: 20px;
