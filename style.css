@@ -1,0 +1,280 @@
+/* =====================================
+   CHINA WEBSITE
+   Elegant Editorial Style
+   ===================================== */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f7f7f5;
+    color: #292929;
+}
+
+
+/* =====================================
+   HEADER
+   ===================================== */
+
+header {
+    background: #ffffff;
+    text-align: center;
+    padding: 55px 20px 45px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 58px;
+    color: #172b4d;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   HERO IMAGE
+   ===================================== */
+
+.hero-image {
+    width: 75%;
+    max-width: 850px;
+    height: 300px;
+    object-fit: cover;
+
+    margin-top: 30px;
+
+    border: 8px solid white;
+    outline: 1px solid #c9c9c9;
+}
+
+
+/* =====================================
+   NAVIGATION
+   ===================================== */
+
+nav {
+    background: #172b4d;
+    padding: 18px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 20px;
+
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    transition: 0.25s;
+}
+
+nav a:hover {
+    color: #c9a227;
+}
+
+
+/* =====================================
+   MAIN SECTIONS
+   ===================================== */
+
+section {
+    max-width: 950px;
+    margin: 65px auto;
+    padding: 0 35px;
+}
+
+section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    color: #172b4d;
+
+    margin-bottom: 25px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #c9a227;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #444;
+}
+
+
+/* =====================================
+   CULTURE / CARDS
+   ===================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+
+    border: 1px solid #dedede;
+
+    padding: 20px;
+
+    transition: 0.25s;
+}
+
+.card:hover {
+    border-color: #c9a227;
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+
+    object-fit: cover;
+
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    color: #172b4d;
+
+    font-size: 21px;
+
+    margin: 5px 0 10px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   CONTENT IMAGES
+   ===================================== */
+
+.content-image {
+    width: 100%;
+    height: 360px;
+
+    object-fit: cover;
+
+    margin: 25px 0;
+
+    border: 1px solid #d5d5d5;
+}
+
+
+/* =====================================
+   FACTS
+   ===================================== */
+
+#facts ul {
+    background: white;
+
+    border: 1px solid #dedede;
+
+    padding: 30px 45px;
+}
+
+#facts li {
+    margin: 13px 0;
+
+    line-height: 1.7;
+
+    color: #444;
+}
+
+#facts li::marker {
+    color: #c9a227;
+}
+
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+footer {
+    background: #172b4d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px;
+
+    margin-top: 90px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   MOBILE
+   ===================================== */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 43px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 230px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px 8px;
+        font-size: 12px;
+    }
+
+    section {
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    section h2 {
+        font-size: 29px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .content-image {
+        height: 250px;
+    }
+}
